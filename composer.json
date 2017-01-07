@@ -1,0 +1,19 @@
+{
+    "name": "fyibmsd/nsqphp",
+    "description": "NSQ Client for PHP",
+    "authors": [
+        {
+            "name": "fyibmsd",
+            "email": "fyibmsd@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nsq\\": "src/"
+        }
+    }
+}
