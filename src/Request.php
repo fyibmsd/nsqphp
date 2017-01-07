@@ -47,7 +47,6 @@ class Request
             return $this->client->post(sprintf('%s/%s', $this->api, $uri), ['query' => $params]);
         } catch (ClientException $exception) {
             $content = json_decode($exception->getResponse()->getBody()->getContents(), JSON_OBJECT_AS_ARRAY);
-            var_dump($exception->getMessage());
 
             throw new TopicException($content['message']);
         }
